@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Finance Networking Outreach Assistant</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0f1e;
+      color: #e2e8f0;
+            min-height: 100vh;
+}
+    header {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #006064 100%);
+      padding: 60px 20px 80px;
+      text-align: center;
+}
+    header h1 {
+            font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+}
+    header p {
+            font-size: 1.15rem;
+      opacity: 0.85;
+      max-width: 580px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+}
+    .badge {
+            display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 0.85rem;
+      margin: 0 6px 8px;
+}
+    .cta-btn {
+            display: inline-block;
+      margin-top: 24px;
+      padding: 14px 32px;
+      background: #00e5ff;
+      color: #0a0f1e;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+}
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,229,255,0.4); }
+    main { max-width: 900px; margin: -30px auto 60px; padding: 0 20px; }
+    .card {
+            background: #111827;
+      border: 1px solid #1e2d45;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+}
+    .card h2 {
+            font-size: 1.3rem;
+      color: #00e5ff;
+      margin-bottom: 16px;
+}
+    .pipeline {
+            display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+      }
+    .step {
+            background: #0d1b2e;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #1e3a5f;
+    }
+    .step .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; height: 36px;
+      background: #00e5ff;
+      color: #0a0f1e;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 10px;
+}
+    .step p { font-size: 0.9rem; opacity: 0.85; line-height: 1.5; }
+    .tech-grid {
+            display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+}
+    .tech-pill {
+            background: #0d1b2e;
+      border: 1px solid #1e3a5f;
+      border-radius: 24px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+}
+    code {
+            background: #0d1b2e;
+      border: 1px solid #1e3a5f;
+      border-radius: 6px;
+      padding: 12px 16px;
+      display: block;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      margin-top: 8px;
+      color: #a5f3fc;
+      }
+    footer {
+            text-align: center;
+      padding: 30px;
+      font-size: 0.85rem;
+      opacity: 0.5;
+      border-top: 1px solid #1e2d45;
+}
+  </style>
+    </head>
+    <body>
+      <header>
+        <h1>Finance Networking Outreach Assistant</h1>
+        <p>A semi-autonomous pipeline that researches finance professionals and drafts elite cold emails — powered by Apollo + Google Gemini.</p>
+        <div>
+          <span class="badge">Python 3.10+</span>
+          <span class="badge">Google Gemini 1.5 Flash</span>
+          <span class="badge">Apollo API</span>
+          <span class="badge">Playwright</span>
+        </div>
+        <a class="cta-btn" href="https://github.com/BearCat-Stack/Project2" target="_blank">View on GitHub</a>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>How It Works</h2>
+      <div class="pipeline">
+            <div class="step"><div class="num">1</div><p>Accept a LinkedIn URL <strong>or</strong> Name + Company as input</p></div>
+        <div class="step"><div class="num">2</div><p>Enrich contact via Apollo (+ optional LinkedIn proxy)</p></div>
+            <div class="step"><div class="num">3</div><p>Generate fact-grounded background intelligence</p></div>
+        <div class="step"><div class="num">4</div><p>Draft a high-conversion cold email via Gemini (QC gated ≥ 8/10)</p></div>
+            <div class="step"><div class="num">5</div><p>Open Gmail &amp; compose the draft — never auto-sends</p></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Tech Stack</h2>
+          <div class="tech-grid">
+            <span class="tech-pill">Python 3.10+</span>
+            <span class="tech-pill">google-generativeai</span>
+            <span class="tech-pill">requests</span>
+            <span class="tech-pill">playwright</span>
+            <span class="tech-pill">python-dotenv</span>
+            <span class="tech-pill">Apollo.io API</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Quick Start</h2>
+          <code>git clone https://github.com/BearCat-Stack/Project2.git
+cd Project2
+python -m venv .venv && source .venv/bin/activate
+    pip install -r requirements.txt
+    playwright install chromium
+cp .env.example .env   # fill in your API keys
+
+    python networking_assistant.py \
+      --linkedin-url "https://www.linkedin.com/in/example" \
+  --sender-name "Your Name" \
+  --sender-school "Baruch College" \
+  --sender-major "Finance + CIS" \
+  --sender-role "Incoming IB Summer Analyst"</code>
+        </div>
+
+        <div class="card">
+          <h2>Output</h2>
+          <p style="opacity:0.8; line-height:1.7">Each run produces: a verified email address, a 2–3 sentence career background summary, 2–3 key insights, 3 subject line options, a 90–130 word personalized cold email, and a QC score with rationale. Only emails scoring <strong style="color:#00e5ff">8/10 or above</strong> are accepted.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 BearCat-Stack &mdash; Built with ChatGPT Codex &amp; Google Gemini
+  </footer>
+</body>
+</html>
