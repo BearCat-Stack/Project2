@@ -27,4 +27,4 @@ jobs:
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REDIRECT_URI: ${{ secrets.GOOGLE_REDIRECT_URI }}
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: npx @railway/cli up --service Project2 --project 8b5b94a8-b38c-4a6c-917e-c87d093abf3c --environment production
+        run: npx @railway/cli up --service Project2
